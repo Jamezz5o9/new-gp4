@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
-import { CgMenu, CgClose } from 'react-icons/cg';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import "./navbar.css";
 
 const Menu = () => (
@@ -43,13 +43,13 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
-          <CgClose
+          <RiCloseLine
             color="#fff"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
-          <CgMenu
+          <RiMenu3Line
             color="#fff"
             size={27}
             onClick={() => setToggleMenu(true)}
